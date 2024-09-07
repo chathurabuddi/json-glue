@@ -1,0 +1,48 @@
+{
+  "name": "json-glue",
+  "version": "1.0.0",
+  "description": "A lightweight utility to recursively merge two JSON objects in TypeScript. Supports replacing primitive values, arrays, and combining objects deeply",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint 'src/**/*.ts'",
+    "lint:fix": "eslint 'src/**/*.ts' --fix",
+    "test": "jest --config jest.config.json",
+    "test:coverage": "jest --config jest.config.json --coverage",
+    "release": "semantic-release --branches main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chathurabuddi/json-glue.git"
+  },
+  "keywords": [
+    "json",
+    "object",
+    "merge",
+    "ts"
+  ],
+  "author": "chathurabuddi <chathu.buddi@gmail.com> (http://chathurabuddi.lk/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chathurabuddi/json-glue/issues"
+  },
+  "homepage": "https://github.com/chathurabuddi/json-glue#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "@typescript-eslint/parser": "^8.4.0",
+    "eslint": "^9.10.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "semantic-release": "^24.1.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.5.4"
+  }
+}
