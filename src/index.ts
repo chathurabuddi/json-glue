@@ -1,1 +1,1 @@
-export { MergeJson as default } from "./merge";
+export { MergeJson as merge } from "./merge";
