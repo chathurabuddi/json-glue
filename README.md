@@ -1,6 +1,9 @@
 # json-glue
 
-[![codecov](https://codecov.io/gh/chathurabuddi/json-glue/branch/master/graph/badge.svg)](https://codecov.io/gh/chathurabuddi/json-glue)
+[![CodeQL](https://github.com/chathurabuddi/json-glue/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/chathurabuddi/json-glue/actions/workflows/github-code-scanning/codeql)
+[![codecov](https://codecov.io/gh/chathurabuddi/json-glue/branch/main/graph/badge.svg?token=iLMbM9uKae)](https://codecov.io/gh/chathurabuddi/json-glue)
+![GitHub Release](https://img.shields.io/github/v/release/chathurabuddi/json-glue)
+![NPM Version](https://img.shields.io/npm/v/json-glue)
 
 A lightweight utility to recursively merge two JSON objects in TypeScript. Supports replacing primitive values, arrays, and combining objects deeply.
 
