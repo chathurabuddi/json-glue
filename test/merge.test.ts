@@ -64,5 +64,12 @@ describe('MergeJson', () => {
         const result = MergeJson(target, source);
         expect(result).toEqual({ a: { x: 2 } });
     });
+
+    test('should handle objects with a property named hasOwnProperty', () => {
+        const target = { a: 1, hasOwnProperty: 2 };
+        const source = { b: 3, hasOwnProperty: 4 };
+        const result = MergeJson(target, source);
+        expect(result).toEqual({ a: 1, b: 3, hasOwnProperty: 4 });
+    });
 });
 
