@@ -8,3 +8,4 @@ coverage
 eslint.config.mjs
 jest.config.json
 tsconfig.jest.json
+.releaserc.json

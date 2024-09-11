@@ -5,16 +5,15 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
+    "prebuild": "rm -rf dist",
     "build": "tsc",
     "lint": "eslint 'src/**/*.ts'",
     "lint:fix": "eslint 'src/**/*.ts' --fix",
     "test": "jest --config jest.config.json",
     "test:coverage": "jest --config jest.config.json --coverage",
-    "release": "semantic-release --branches main"
+    "release": "semantic-release --branches main",
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",
